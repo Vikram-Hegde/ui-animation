@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -19,11 +19,11 @@ nav {
   display: flex;
   padding: 0 3.125rem;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav .logo {
@@ -50,12 +50,12 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   height: calc(100vh - 5rem);
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 3.125rem;
 }
 
@@ -86,10 +86,10 @@ main {
   width: 100%;
   height: 100%;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .colored-backgrounds div:nth-child(1) {
@@ -129,7 +129,7 @@ main {
 
 .content button:active {
   -webkit-transform: scale(0.96);
-          transform: scale(0.96);
+  transform: scale(0.96);
 }
 
 .images {
@@ -144,26 +144,26 @@ main {
   height: 100%;
   width: 100%;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .image:nth-child(1) {
-  background: url("./images/image1.png") no-repeat 50% 50%/cover;
+  background: url("./images/image1.png") no-repeat 50% 50% / cover;
 }
 
 .image:nth-child(2) {
-  background: url("./images/image2.png") no-repeat 50% 50%/cover;
+  background: url("./images/image2.png") no-repeat 50% 50% / cover;
 }
 
 .image:nth-child(3) {
-  background: url("./images/image3.png") no-repeat 50% 50%/cover;
+  background: url("./images/image3.png") no-repeat 50% 50% / cover;
 }
 
 .image:nth-child(4) {
-  background: url("./images/image4.png") no-repeat 50% 50%/cover;
+  background: url("./images/image4.png") no-repeat 50% 50% / cover;
 }
 
 .navigation .right,
@@ -176,11 +176,11 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 1rem;
   cursor: pointer;
 }
@@ -194,18 +194,20 @@ main {
 .navigation .right:active,
 .navigation .left:active {
   -webkit-transform: scale(0.96);
-          transform: scale(0.96);
+  transform: scale(0.96);
 }
 
 .images,
 .colored-backgrounds {
-  -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  -webkit-transition: -webkit-transform 0.35s
+    cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: -webkit-transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
-  transition: transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1),
+    -webkit-transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .colored-backgrounds {
   -webkit-transition-delay: 150ms;
-          transition-delay: 150ms;
+  transition-delay: 150ms;
 }

@@ -20,6 +20,4 @@ navRight.addEventListener("click", right);
 function transform(index) {
   images.style.transform = `translateX(-${index * 100}%)`;
   colors.style.transform = `translateX(-${index * 100}%)`;
-
-  console.log(index * 100);
 }
